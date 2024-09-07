@@ -1,0 +1,15 @@
+## Swap
+UUID=00000000-0000-0000-0000-000000000000 none swap sw 0 0
+
+## Root   
+UUID=00000000-0000-0000-0000-000000000000 / ext4 errors=remount-ro 0 1
+
+## Data
+UUID=00000000-0000-0000-0000-000000000000 /data ext4 defaults 0 2
+
+## Wheezy
+/dev /wheezy/dev devfs defaults,bind 0 1
+none /wheezy/dev/pts devpts defaults 0 1
+none /wheezy/proc proc defaults 0 1
+none /wheezy/sys sysfs defaults 0 1
+
